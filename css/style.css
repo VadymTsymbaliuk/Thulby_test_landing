@@ -1,7 +1,9 @@
 .logo-container-mobile{
     display: none;
 }
-
+.navbar-nav:last-child{
+    flex-direction: row;
+}
 img {
     max-width: 100%;
 }
