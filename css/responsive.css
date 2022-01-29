@@ -1,5 +1,11 @@
 @media screen and (max-width: 991px) {
-   .nav-link {
+   .logo-container-mobile{
+       display: block;
+   }
+    .logo-container{
+        display: none;
+    }
+    .nav-link {
         padding-left: 10px !important;
     }
 
