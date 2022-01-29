@@ -139,7 +139,7 @@ header.navbar {
     margin-bottom: 26px;
 }
 
-.emblem:hover {
+.unique_features .col-4:hover .emblem {
     transform: rotateY(180deg) scale(1.5, 1.5);
     box-shadow: 0 0 10px 0 #bbbffb inset, 0 0 10px 4px #bbbffb;
     transition: .3s;
@@ -173,7 +173,7 @@ header.navbar {
     margin-bottom: 111px;
 }
 
-.emblem:hover ~ .unique_feature-text {
+.unique_features .col-4:hover .emblem ~ .unique_feature-text {
     color: #000000;
     text-shadow:
             0 0 5px #544e4e,
