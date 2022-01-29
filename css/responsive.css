@@ -12,6 +12,9 @@
     .navbar-brand {
         padding-left: 10px !important;
     }
+    .navbar-collapse:nth-child(last-child){
+        flex-direction: row;
+    }
     h1 {
         font-size: 3rem !important;
     }
