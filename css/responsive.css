@@ -1,0 +1,95 @@
+@media screen and (max-width: 991px) {
+   .nav-link {
+        padding-left: 10px !important;
+    }
+
+    .navbar-brand {
+        padding-left: 10px !important;
+    }
+    h1 {
+        font-size: 3rem !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+
+    h3 {
+        font-size: 1.75rem !important;
+    }
+    .people_and_society-content_box > h3,
+    .people_and_society-content_box > p {
+        font-size: 1.5rem;
+    }
+
+
+    .main {
+        margin-top: 20px;
+    }
+
+    .our_guides-explain-text_1 {
+        margin-bottom: 20px;
+    }
+
+    .our_guides-explain {
+        margin-bottom: 20px;
+    }
+
+    .our_best_sellers-title {
+        margin-bottom: 20px;
+    }
+
+    .people_and_society-bg {
+        padding: 20px 0;
+    }
+
+    .unique_features>.col-4{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .unique_feature-text {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+
+    }
+
+    .our_guides-info {
+        margin-bottom: 20px;
+    }
+
+    .some_of_the_features{
+        padding-top: 20px;
+    }
+
+    .guide_interviews {
+        margin-bottom: 20px;
+    }
+
+    .guide_interviews_title {
+        margin: 20px 0;
+    }
+
+    .discover-link {
+        margin: 20px 0;
+    }
+
+    .keepInTouch {
+        padding-bottom: 20px;
+    }
+
+    .footer .container {
+        padding-top: 20px;
+    }
+
+    footer h5 {
+        margin-bottom: 20px;
+    }
+
+    .footer_logo {
+        max-width: 70px;
+        margin-bottom: 17px;
+    }
+
+}
