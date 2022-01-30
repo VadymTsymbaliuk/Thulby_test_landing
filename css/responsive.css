@@ -30,6 +30,9 @@
     .people_and_society-content_box > p {
         font-size: 1.5rem;
     }
+    .people_and_society-img_box .front{
+        position: relative;
+    }
 
 
     .main {
