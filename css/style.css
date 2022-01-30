@@ -21,15 +21,12 @@ header.navbar {
     background-color: #F0EFEB;
 }
 
-.container {
-    max-width: 1060px;
+.section{
+    margin-bottom: 60px;
 }
 
-
-
-/*==================== Main =============================*/
-.main {
-    margin-top: 60px;
+.container {
+    max-width: 1060px;
 }
 
 /*============== Our guides section =====================*/
@@ -59,9 +56,9 @@ header.navbar {
     margin-bottom: 20px;
 }
 
-.our_guides-info {
-    margin-bottom: 248px;
-}
+/*.our_guides-info {*/
+/*    margin-bottom: 248px;*/
+/*}*/
 
 /*People and society*/
 .people_and_society-bg {
@@ -129,7 +126,7 @@ header.navbar {
 
 /*Some of the features*/
 .some_of_the_features{
-    padding-top: 190px;
+    padding-top: 130px;
 }
 
 .some_of_the_features-title {
