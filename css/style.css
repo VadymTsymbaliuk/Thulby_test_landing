@@ -111,15 +111,20 @@ header.navbar {
 .people_and_society-box:hover .people_and_society-img_box {
     transform: rotateY(180deg);
 }
-
-.back {
+.people_and_society-img_box img{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    transform: rotateY(180deg);
+}
+.front{
+    max-height: 400px;
+}
+
+.back {
+   transform: rotateY(180deg);
 }
 
 /*Some of the features*/
