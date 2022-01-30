@@ -186,7 +186,7 @@ header.navbar {
 
 /*Each Thalby guide includes interviews*/
 .guide_interviews {
-    background-color: #F0F0F0;
+    background-color: rgba(240,240,240, .35);
     position: relative;
     z-index: 1;
     margin-bottom: 79px;
