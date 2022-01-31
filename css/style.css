@@ -1,16 +1,19 @@
-.logo-container-mobile{
+
+.logo-container-mobile {
     display: none;
 }
-.navbar-nav:last-child{
+
+.navbar-nav:last-child {
     flex-direction: row;
 }
+
 img {
     max-width: 100%;
 }
 
 .insta {
-    margin-top: 10px;
-    margin-left: 10px;
+    height: 40px;
+    width: 27px;
 }
 
 header.navbar {
@@ -21,7 +24,7 @@ header.navbar {
     background-color: #F0EFEB;
 }
 
-.section{
+.section {
     margin-bottom: 60px;
 }
 
@@ -29,8 +32,6 @@ header.navbar {
     max-width: 1060px;
 }
 
-/*============== Our guides section =====================*/
-/*Our guides explain*/
 .our_guides-explain {
     margin: 0 auto;
     margin-bottom: 88px;
@@ -47,7 +48,6 @@ header.navbar {
     margin-bottom: 47px;
 }
 
-/*Our best sellers*/
 .our_best_sellers-title {
     margin-bottom: 52px;
 }
@@ -56,11 +56,6 @@ header.navbar {
     margin-bottom: 20px;
 }
 
-/*.our_guides-info {*/
-/*    margin-bottom: 248px;*/
-/*}*/
-
-/*People and society*/
 .people_and_society-bg {
     padding: 76px 0 51px 0;
 }
@@ -94,7 +89,7 @@ header.navbar {
     padding: 0 15px;
     position: relative;
     text-align: center;
-    transition: .5s;
+    transition: .2s;
     transform-style: preserve-3d;
     backface-visibility: hidden;
 }
@@ -104,11 +99,12 @@ header.navbar {
     text-decoration: underline;
 }
 
-/*animation*/
+
 .people_and_society-box:hover .people_and_society-img_box {
     transform: rotateY(180deg);
 }
-.people_and_society-img_box img{
+
+.people_and_society-img_box img {
     position: absolute;
     top: 0;
     left: 0;
@@ -116,16 +112,16 @@ header.navbar {
     bottom: 0;
     margin: auto;
 }
-.front{
+
+.front {
     max-height: 400px;
 }
 
 .back {
-   transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
-/*Some of the features*/
-.some_of_the_features{
+.some_of_the_features {
     padding-top: 130px;
 }
 
@@ -143,7 +139,7 @@ header.navbar {
 
 .unique_features .col-4:hover .emblem {
     transform: rotateY(180deg) scale(1.5, 1.5);
-    box-shadow: 0 0 10px 0 #bbbffb inset, 0 0 10px 4px #bbbffb;
+    box-shadow:  0 0 10px 0 #bbbffb , 0 0 10px 4px #bbbffb;
     transition: .3s;
 }
 
@@ -175,20 +171,8 @@ header.navbar {
     margin-bottom: 111px;
 }
 
-.unique_features .col-4:hover .emblem ~ .unique_feature-text {
-    color: #000000;
-    text-shadow:
-            0 0 5px #544e4e,
-            0 0 10px #544e4e,
-            0 0 20px #a29d9d,
-            0 0 40px #a29d9d,
-            0 0 80px #a29d9d
-}
-
-
-/*Each Thalby guide includes interviews*/
 .guide_interviews {
-    background-color: rgba(240,240,240, .35);
+    background: linear-gradient(360deg, #F0F0F0 , white 28%);
     position: relative;
     z-index: 1;
     margin-bottom: 79px;
@@ -221,26 +205,24 @@ header.navbar {
     margin: 44px 0 52px;
 }
 
-/*===================================*/
 .keepInTouch {
     padding-bottom: 48px;
     max-width: 500px;
     margin: 0 auto;
 }
 
-/*CUSTOM PRELOADER*/
-.loader-bg{
+.loader-bg {
     display: none;
     background: #fff;
     width: 100%;
     height: 100%;
 }
 
-.loader-bg.active{
+.loader-bg.active {
     display: block;
 }
 
-.loader-p{
+.loader-p {
     margin: 0 auto;
     position: relative;
     border: 0 solid transparent;
@@ -249,7 +231,7 @@ header.navbar {
     height: 150px;
 }
 
-.loader-p:before, .loader-p:after{
+.loader-p:before, .loader-p:after {
     content: '';
     border: 1em solid #15e38a;
     border-radius: 50%;
@@ -262,19 +244,19 @@ header.navbar {
     opacity: 0;
 }
 
-.loader-p:before{
+.loader-p:before {
     animation-delay: 0.5s;
 }
 
-@keyframes loader{
-    0%{
+@keyframes loader {
+    0% {
         transform: scale(0);
         opacity: 0;
     }
-    50%{
+    50% {
         opacity: 1;
     }
-    100%{
+    100% {
         transform: scale(1);
         opacity: 0;
     }
@@ -286,7 +268,7 @@ header.navbar {
     margin: 0 auto;
 }
 
-.form-container.active{
+.form-container.active {
     display: block;
 }
 
@@ -299,14 +281,12 @@ header.navbar {
     border: 1px solid black;
 }
 
-
-/*============== Footer =====================*/
 .footer {
     color: #ffffff;
     background-color: #000;
 }
 
-.footer .container{
+.footer .container {
     margin-bottom: -35px;
     padding: 51px 15px 60px 15px;
 }
