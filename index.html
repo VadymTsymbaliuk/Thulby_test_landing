@@ -95,7 +95,6 @@
         </div><!--container-->
         <!--first-cont-->
     </section>
-
     <section class="section our_guides">
         <div class="container">
             <div class="our_guides-explain">
@@ -317,21 +316,23 @@
                 <div class="loader-p"></div>
             </div>
             <form class="form-container active">
-                <div class="row mb-3">
-                    <div class="col">
-                        <input aria-label="First name" class="form-control" placeholder="First name" type="text">
-                    </div>
-                    <div class="col">
-                        <input aria-label="Last name" class="form-control" placeholder="Last name" type="text">
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="First name" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" required>
+                        </div>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col">
-                        <input aria-label="Email" class="form-control" placeholder="Email" type="text">
+                        <input aria-label="Email" class="form-control" placeholder="Email" type="email" required>
                     </div>
                 </div>
                 <div class="row m-auto justify-content-center">
-                    <button class="btn btn-dark subscribe" type="button">Subscribe</button>
+                    <button class="btn btn-dark subscribe" type="submit">Subscribe</button>
                 </div>
             </form>
         </div>
