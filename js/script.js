@@ -24,8 +24,17 @@ let slideUp = {
 };
 
 
-ScrollReveal().reveal('.people_and_society', { scale: 0.85,
-    delay: 500 } )
+ScrollReveal().reveal('.people_and_society', {
+    duration: 1000,
+    easing: 'ease-out',
+    distance: '25%',
+    scale: 0.25,
+    origin: 'left',
+    rotate: {
+        y: 120,
+        z: 90,
+    },
+})
 ScrollReveal().reveal('.some_of_the_features', { scale: 0.85,
     delay: 500 })
 ScrollReveal().reveal('.guide_interviews', { scale: 0.85,
