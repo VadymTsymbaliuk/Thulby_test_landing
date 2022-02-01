@@ -25,11 +25,12 @@ header.navbar {
 }
 
 .section {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .container {
     max-width: 1060px;
+    padding-bottom: 10px;
 }
 
 .our_guides-explain {

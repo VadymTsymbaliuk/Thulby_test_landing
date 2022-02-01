@@ -1,10 +1,12 @@
 @media screen and (max-width: 991px) {
-   .logo-container-mobile{
-       display: block;
-   }
-    .logo-container{
+    .logo-container-mobile {
+        display: block;
+    }
+
+    .logo-container {
         display: none;
     }
+
     .nav-link {
         padding-left: 10px !important;
     }
@@ -12,9 +14,11 @@
     .navbar-brand {
         padding-left: 10px !important;
     }
-    .navbar-collapse:nth-child(last-child){
+
+    .navbar-collapse:nth-child(last-child) {
         flex-direction: row;
     }
+
     h1 {
         font-size: 3rem !important;
     }
@@ -26,17 +30,18 @@
     h3 {
         font-size: 1.75rem !important;
     }
+
+    .people_and_society > div:nth-child(even) >.people_and_society-box{
+        text-align: left;
+    }
+
     .people_and_society-content_box > h3,
     .people_and_society-content_box > p {
         font-size: 1.5rem;
     }
-    .people_and_society-img_box .front{
+
+    .people_and_society-img_box .front {
         position: relative;
-    }
-
-
-    .main {
-        margin-top: 20px;
     }
 
     .our_guides-explain-text_1 {
@@ -55,7 +60,7 @@
         padding: 20px 0;
     }
 
-    .unique_features>.col-4{
+    .unique_features > .col-4 {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
@@ -71,8 +76,13 @@
         margin-bottom: 20px;
     }
 
-    .some_of_the_features{
+    .some_of_the_features {
         padding-top: 20px;
+    }
+
+    .each_thalby_guide img{
+        display: block;
+        margin: 0 auto;
     }
 
     .guide_interviews {
@@ -102,6 +112,13 @@
     .footer_logo {
         max-width: 70px;
         margin-bottom: 17px;
+    }
+    .footer_logo-s_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_logo-s_box a{
+        margin-bottom:10px ;
     }
 
 }
