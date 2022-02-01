@@ -23,8 +23,12 @@ let slideUp = {
     opacity: null
 };
 
-ScrollReveal().reveal('. our_guides', slideUp)
-ScrollReveal().reveal('.people_and_society', slideUp)
-ScrollReveal().reveal('.some_of_the_features', slideUp)
-ScrollReveal().reveal('.guide_interviews', slideUp)
-ScrollReveal().reveal('.keepInTouch', slideUp)
+
+ScrollReveal().reveal('.people_and_society', { scale: 0.85,
+    delay: 500 } )
+ScrollReveal().reveal('.some_of_the_features', { scale: 0.85,
+    delay: 500 })
+ScrollReveal().reveal('.guide_interviews', { scale: 0.85,
+    delay: 500 })
+ScrollReveal().reveal('.keepInTouch', { scale: 0.85,
+    delay: 500 })
