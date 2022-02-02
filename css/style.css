@@ -8,7 +8,7 @@
 }
 
 img {
-    max-width: 100%;
+    max-height: 400px;
 }
 
 .insta {
@@ -31,6 +31,50 @@ header.navbar {
 .container {
     max-width: 1060px;
     padding-bottom: 10px;
+}
+
+ .form__form_input_input_search{
+    display: none;
+    margin:auto;
+}
+.block{
+    display: block;
+    margin: auto 10px;
+}
+
+.slideRight{
+    display: block;
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight;
+
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-150%);
+    }
+    50%{
+        transform: translateX(8%);
+    }
+    65%{
+        transform: translateX(-4%);
+    }
+    80%{
+        transform: translateX(4%);
+    }
+    95%{
+        transform: translateX(-2%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .our_guides-explain {
@@ -129,6 +173,10 @@ header.navbar {
 .some_of_the_features-title {
     margin-bottom: 69px;
 }
+.each_thalby_guide img{
+    display: block;
+    margin: 0 auto;
+}
 
 .emblem {
     width: 70px;
@@ -192,10 +240,6 @@ header.navbar {
 
 .guide_interviews_title {
     margin: 52px 0 102px;
-}
-
-.each_thalby_guide img {
-    width: 100%;
 }
 
 .subtitle {

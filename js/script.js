@@ -17,14 +17,20 @@ form.addEventListener('submit', (e) => {
     },3000)
 })
 
-let slideUp = {
-    distance: '150%',
-    origin: 'bottom',
-    opacity: null
-};
+//
+let searchButton = document.querySelector('.btn-search')
+searchButton.addEventListener('click', function (e){
+    e.preventDefault()
+    let searchInput = document.querySelector('.form__form_input_input_search')
+
+    searchInput.classList.add('slideRight')
+    searchInput.classList.add('block')
+})
 
 
-ScrollReveal().reveal('.people_and_society', {
+
+
+ScrollReveal().reveal('.people_and_society-bg', {
     duration: 1000,
     easing: 'ease-out',
     distance: '25%',
@@ -35,9 +41,49 @@ ScrollReveal().reveal('.people_and_society', {
         z: 90,
     },
 })
-ScrollReveal().reveal('.some_of_the_features', { scale: 0.85,
-    delay: 500 })
-ScrollReveal().reveal('.guide_interviews', { scale: 0.85,
-    delay: 500 })
-ScrollReveal().reveal('.keepInTouch', { scale: 0.85,
-    delay: 500 })
+ScrollReveal().reveal('.col-4', {
+    duration: 1000,
+    easing: 'ease-out',
+    distance: '25%',
+    scale: 0.25,
+    origin: 'left',
+    rotate: {
+        y: 120,
+        z: 90,
+    },
+})
+
+ScrollReveal().reveal('.col-lg-4', {
+    duration: 1000,
+    easing: 'ease-out',
+    distance: '25%',
+    scale: 0.25,
+    origin: 'left',
+    rotate: {
+        y: 120,
+        z: 90,
+    },
+})
+ScrollReveal().reveal('.guide_interviews_title', {
+    duration: 1000,
+    easing: 'ease-out',
+    distance: '25%',
+    scale: 0.25,
+    origin: 'left',
+    rotate: {
+        y: 120,
+        z: 90,
+    },
+})
+ScrollReveal().reveal('.keepInTouch', {
+    duration: 1000,
+    easing: 'ease-out',
+    distance: '25%',
+    scale: 0.25,
+    origin: 'left',
+    rotate: {
+        y: 120,
+        z: 90,
+    },
+})
+
