@@ -7,13 +7,15 @@
 .navbar-nav:last-child {
     flex-direction: row;
 }
+.nav-item{
+    margin: auto;
+}
 
 img {
     max-height: 400px;
 }
 
 .insta {
-    height: 40px;
     width: 27px;
 }
 
