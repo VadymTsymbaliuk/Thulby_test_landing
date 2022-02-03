@@ -27,6 +27,7 @@ const destPath = {
 
 const jsPath = [
     './node_modules/jquery/dist/jquery.min.js',
+    './node_modules/jquery-validation/dist/jquery.validate.min.js',
     './node_modules/bootstrap/dist/js/bootstrap.min.js',
     './node_modules/scrollreveal/dist/scrollreveal.min.js',
     './app/js/script.js'

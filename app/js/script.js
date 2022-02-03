@@ -3,18 +3,55 @@ const form = document.querySelector('.form-container')
 const subscribeForm = document.querySelector('.form-container')
 const loader = document.querySelector('.loader-bg')
 
-form.addEventListener('submit', (e) => {
-     e.preventDefault()
-    subscribeForm.classList.toggle('active')
-    loader.classList.toggle('active')
+$.validator.addMethod("lettersonly", function (value, element) {
+    return this.optional(element) || /^[a-zA-Zа-яА-Я]+$/i.test(value);
+}, "Letters and spaces only please");
 
-    document.querySelector('#firstName').value = ''
-    document.querySelector('#lastName').value = ''
-    document.querySelector('#email').value = ''
-    setTimeout(()=>{
-        subscribeForm.classList.toggle('active')
-        loader.classList.toggle('active')
-    },3000)
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    $(".form_validate").validate({
+        rules: {
+            firstName: {
+                required: true,
+                lettersonly: true,
+                minlength: 2
+            },
+            lastName: {
+                required: true,
+                lettersonly: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true,
+            }
+        },
+        messages: {
+            firstName: "Please specify your name",
+            lastName: "Please specify your email",
+            email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com"
+            }
+        },
+        focusInvalid: true,
+        errorClass: "input_error",
+        submitHandler: function (form) {
+            subscribeForm.classList.toggle('active')
+            loader.classList.toggle('active')
+
+            document.querySelector('#firstName').value = ''
+            document.querySelector('#lastName').value = ''
+            document.querySelector('#email').value = ''
+            setTimeout(()=>{
+                subscribeForm.classList.toggle('active')
+                loader.classList.toggle('active')
+            },3000)
+            // form.submit();
+        }
+
+    })
+
 })
 
 //
@@ -28,9 +65,7 @@ searchButton.addEventListener('click', function (e){
 })
 
 
-
-
-ScrollReveal().reveal('.people_and_society-bg', {
+ScrollReveal().reveal('.block_animation', {
     duration: 1000,
     easing: 'ease-out',
     distance: '25%',
@@ -41,49 +76,3 @@ ScrollReveal().reveal('.people_and_society-bg', {
         z: 90,
     },
 })
-ScrollReveal().reveal('.col-4', {
-    duration: 1000,
-    easing: 'ease-out',
-    distance: '25%',
-    scale: 0.25,
-    origin: 'left',
-    rotate: {
-        y: 120,
-        z: 90,
-    },
-})
-
-ScrollReveal().reveal('.col-lg-4', {
-    duration: 1000,
-    easing: 'ease-out',
-    distance: '25%',
-    scale: 0.25,
-    origin: 'left',
-    rotate: {
-        y: 120,
-        z: 90,
-    },
-})
-ScrollReveal().reveal('.guide_interviews_title', {
-    duration: 1000,
-    easing: 'ease-out',
-    distance: '25%',
-    scale: 0.25,
-    origin: 'left',
-    rotate: {
-        y: 120,
-        z: 90,
-    },
-})
-ScrollReveal().reveal('.keepInTouch', {
-    duration: 1000,
-    easing: 'ease-out',
-    distance: '25%',
-    scale: 0.25,
-    origin: 'left',
-    rotate: {
-        y: 120,
-        z: 90,
-    },
-})
-
