@@ -37,8 +37,10 @@ form.addEventListener('submit', (e) => {
         focusInvalid: true,
         errorClass: "input_error",
         submitHandler: function (form) {
+
             subscribeForm.classList.toggle('active')
             loader.classList.toggle('active')
+
 
             document.querySelector('#firstName').value = ''
             document.querySelector('#lastName').value = ''
@@ -49,12 +51,11 @@ form.addEventListener('submit', (e) => {
             },3000)
             // form.submit();
         }
-
     })
-
 })
 
 //
+
 let searchButton = document.querySelector('.btn-search')
 searchButton.addEventListener('click', function (e){
     e.preventDefault()

@@ -375,3 +375,9 @@ footer h5,
 footer p {
     color: rgba(255, 255, 255, .7);
 }
+
+.input_error{
+    border: 1px solid red;
+    padding: 5px;
+    margin-top: 5px;
+}
